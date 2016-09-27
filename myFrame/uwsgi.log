@@ -1,0 +1,759 @@
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sun Sep 18 17:35:26 2016] ***
+compiled with version: 4.6.3 on 17 September 2016 16:18:30
+os: Linux-3.2.0-67-generic #101-Ubuntu SMP Tue Jul 15 17:46:11 UTC 2014
+nodename: iZ254lket7vZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/zillia/myFrame
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zillia/myFrame
+your processes number limit is 7815
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+Python version: 2.7.3 (default, Jun 22 2015, 19:44:33)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26424b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26424b0 pid: 4572 (default app)
+spawned uWSGI master process (pid: 4572)
+spawned uWSGI worker 1 (pid: 4577, cores: 1)
+spawned uWSGI worker 2 (pid: 4578, cores: 1)
+[pid: 4578|app: 0|req: 1/1] 159.226.43.56 () {44 vars in 930 bytes} [Sun Sep 18 17:35:33 2016] GET /admin/backend/mypapers/ => generated 3071 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4577|app: 0|req: 1/2] 159.226.43.56 () {42 vars in 821 bytes} [Sun Sep 18 17:35:34 2016] GET /admin/jsi18n/ => generated 3217 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/zillia/myFrame
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:9090)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from myFrame/uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sun Sep 18 17:37:48 2016] ***
+compiled with version: 4.6.3 on 17 September 2016 16:18:30
+os: Linux-3.2.0-67-generic #101-Ubuntu SMP Tue Jul 15 17:46:11 UTC 2014
+nodename: iZ254lket7vZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/zillia/myFrame
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zillia/myFrame
+your processes number limit is 7815
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 3
+Python version: 2.7.3 (default, Jun 22 2015, 19:44:33)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x243c030
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x243c030 pid: 4572 (default app)
+gracefully (RE)spawned uWSGI master process (pid: 4572)
+spawned uWSGI worker 1 (pid: 4595, cores: 1)
+spawned uWSGI worker 2 (pid: 4596, cores: 1)
+[pid: 4596|app: 0|req: 1/1] 159.226.43.56 () {44 vars in 930 bytes} [Sun Sep 18 17:38:01 2016] GET /admin/backend/mypapers/ => generated 3071 bytes in 80 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4595|app: 0|req: 1/2] 159.226.43.56 () {42 vars in 821 bytes} [Sun Sep 18 17:38:01 2016] GET /admin/jsi18n/ => generated 3217 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+DAMN ! worker 1 (pid: 4595) died :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 4602)
+DAMN ! worker 2 (pid: 4596) died :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 4603)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/zillia/myFrame
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:9090)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from myFrame/uwsgi.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sun Sep 18 17:38:34 2016] ***
+compiled with version: 4.6.3 on 17 September 2016 16:18:30
+os: Linux-3.2.0-67-generic #101-Ubuntu SMP Tue Jul 15 17:46:11 UTC 2014
+nodename: iZ254lket7vZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/zillia/myFrame
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zillia/myFrame
+your processes number limit is 7815
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 3
+Python version: 2.7.3 (default, Jun 22 2015, 19:44:33)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1bcc030
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1bcc030 pid: 4572 (default app)
+gracefully (RE)spawned uWSGI master process (pid: 4572)
+spawned uWSGI worker 1 (pid: 4608, cores: 1)
+spawned uWSGI worker 2 (pid: 4609, cores: 1)
+[pid: 4609|app: 0|req: 1/1] 159.226.43.56 () {44 vars in 930 bytes} [Sun Sep 18 17:39:59 2016] GET /admin/backend/mypapers/ => generated 3071 bytes in 78 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4608|app: 0|req: 1/2] 159.226.43.56 () {42 vars in 821 bytes} [Sun Sep 18 17:39:59 2016] GET /admin/jsi18n/ => generated 3217 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 4609|app: 0|req: 2/3] 159.226.43.56 () {42 vars in 847 bytes} [Sun Sep 18 17:40:01 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+DAMN ! worker 2 (pid: 4609) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 4617)
+Sun Sep 18 17:47:55 2016 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep 18 17:47:55 2016 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.13.1 (64bit) on [Sun Sep 18 17:48:33 2016] ***
+compiled with version: 4.6.3 on 17 September 2016 16:18:30
+os: Linux-3.2.0-67-generic #101-Ubuntu SMP Tue Jul 15 17:46:11 UTC 2014
+nodename: iZ254lket7vZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/zillia/myFrame
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zillia/myFrame
+your processes number limit is 7815
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+Python version: 2.7.3 (default, Jun 22 2015, 19:44:33)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xfd34b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xfd34b0 pid: 4651 (default app)
+spawned uWSGI master process (pid: 4651)
+spawned uWSGI worker 1 (pid: 4656, cores: 1)
+spawned uWSGI worker 2 (pid: 4657, cores: 1)
+[pid: 4657|app: 0|req: 1/1] 159.226.43.56 () {44 vars in 930 bytes} [Sun Sep 18 17:48:36 2016] GET /admin/backend/mypapers/ => generated 3071 bytes in 74 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 1/2] 159.226.43.56 () {42 vars in 821 bytes} [Sun Sep 18 17:48:36 2016] GET /admin/jsi18n/ => generated 3217 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 2/3] 128.72.107.50 () {36 vars in 677 bytes} [Sun Sep 18 18:53:47 2016] GET /favicon.ico => generated 2399 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 2/4] 128.72.107.50 () {38 vars in 703 bytes} [Sun Sep 18 18:53:47 2016] POST /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 3/5] 128.72.107.50 () {36 vars in 670 bytes} [Sun Sep 18 18:53:48 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 3/6] 128.72.107.50 () {38 vars in 703 bytes} [Sun Sep 18 18:53:54 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http-req
+[pid: 4656|app: 0|req: 4/7] 103.24.2.83 () {30 vars in 378 bytes} [Sun Sep 18 20:20:03 2016] GET /http-req => generated 2398 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 5/8] 159.226.43.56 () {44 vars in 930 bytes} [Sun Sep 18 20:32:57 2016] GET /admin/backend/mypapers/ => generated 3071 bytes in 63 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 4/9] 159.226.43.56 () {42 vars in 821 bytes} [Sun Sep 18 20:32:57 2016] GET /admin/jsi18n/ => generated 3217 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 6/10] 172.82.166.210 () {30 vars in 410 bytes} [Sun Sep 18 21:00:09 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 7/11] 159.226.43.56 () {44 vars in 930 bytes} [Sun Sep 18 21:27:44 2016] GET /admin/backend/mypapers/ => generated 3071 bytes in 34 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 5/12] 159.226.43.56 () {42 vars in 821 bytes} [Sun Sep 18 21:27:44 2016] GET /admin/jsi18n/ => generated 3217 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 8/13] 159.226.43.56 () {42 vars in 847 bytes} [Sun Sep 18 21:27:50 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 4656|app: 0|req: 9/14] 182.254.154.72 () {32 vars in 447 bytes} [Sun Sep 18 21:44:03 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 10/15] 93.174.93.136 () {30 vars in 409 bytes} [Mon Sep 19 00:59:00 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4656|app: 0|req: 11/16] 115.239.228.202 () {36 vars in 614 bytes} [Mon Sep 19 01:55:34 2016] GET /cgi-bin/common/attr?id=260714&r=0.7172337853135420 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 12/17] 42.156.251.185 () {36 vars in 587 bytes} [Mon Sep 19 05:21:26 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 13/18] 159.226.43.56 () {42 vars in 916 bytes} [Mon Sep 19 09:24:29 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 6/19] 159.226.43.56 () {42 vars in 916 bytes} [Mon Sep 19 09:24:36 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 14/20] 159.226.43.56 () {40 vars in 769 bytes} [Mon Sep 19 09:25:27 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 15/21] 80.82.78.38 () {30 vars in 407 bytes} [Mon Sep 19 10:17:38 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 16/22] 95.25.84.200 () {36 vars in 678 bytes} [Mon Sep 19 10:35:25 2016] GET /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 7/23] 95.25.84.200 () {38 vars in 704 bytes} [Mon Sep 19 10:35:25 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 17/24] 95.25.84.200 () {36 vars in 670 bytes} [Mon Sep 19 10:35:27 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 8/25] 95.25.84.200 () {38 vars in 703 bytes} [Mon Sep 19 10:35:29 2016] POST /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 18/26] 95.25.84.200 () {36 vars in 678 bytes} [Mon Sep 19 10:36:03 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 9/27] 95.25.84.200 () {38 vars in 704 bytes} [Mon Sep 19 10:36:03 2016] POST /favicon.ico => generated 2401 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 19/28] 95.25.84.200 () {36 vars in 672 bytes} [Mon Sep 19 10:36:04 2016] GET /favicon.ico => generated 2394 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 10/29] 95.25.84.200 () {38 vars in 704 bytes} [Mon Sep 19 10:36:06 2016] POST /favicon.ico => generated 2401 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 4656|app: 0|req: 20/30] 182.254.154.72 () {32 vars in 447 bytes} [Mon Sep 19 12:06:26 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 21/31] 123.151.42.61 () {34 vars in 399 bytes} [Mon Sep 19 14:09:02 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4656|app: 0|req: 22/32] 115.239.228.202 () {36 vars in 614 bytes} [Mon Sep 19 15:22:08 2016] GET /cgi-bin/common/attr?id=260714&r=0.2500806732123530 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 23/33] 125.166.200.28 () {32 vars in 343 bytes} [Mon Sep 19 15:32:37 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 24/34] 103.37.148.156 () {34 vars in 430 bytes} [Mon Sep 19 15:57:47 2016] GET /favicon.ico => generated 2393 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 25/35] 125.166.200.28 () {32 vars in 407 bytes} [Mon Sep 19 16:26:50 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 26/36] 123.59.59.52 () {32 vars in 424 bytes} [Mon Sep 19 16:50:13 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 27/37] 125.166.200.28 () {32 vars in 343 bytes} [Mon Sep 19 17:41:32 2016] GET / => generated 69011 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 28/38] 60.191.52.254 () {32 vars in 424 bytes} [Mon Sep 19 17:45:36 2016] HEAD / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 11/39] 125.166.200.28 () {32 vars in 343 bytes} [Mon Sep 19 17:47:14 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 29/40] 114.215.239.201 () {26 vars in 288 bytes} [Mon Sep 19 18:41:51 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 30/41] 43.241.223.210 () {34 vars in 430 bytes} [Mon Sep 19 20:39:54 2016] GET /favicon.ico => generated 2393 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /ip_json.php
+[pid: 4656|app: 0|req: 31/42] 179.99.200.39 () {40 vars in 703 bytes} [Mon Sep 19 21:16:02 2016] GET /ip_json.php => generated 2403 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 32/43] 95.25.84.200 () {36 vars in 677 bytes} [Tue Sep 20 00:37:45 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 12/44] 95.25.84.200 () {38 vars in 703 bytes} [Tue Sep 20 00:37:45 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 33/45] 95.25.84.200 () {36 vars in 670 bytes} [Tue Sep 20 00:37:47 2016] GET /favicon.ico => generated 2392 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 13/46] 95.25.84.200 () {38 vars in 704 bytes} [Tue Sep 20 00:37:50 2016] POST /favicon.ico => generated 2401 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 34/47] 95.25.84.200 () {36 vars in 677 bytes} [Tue Sep 20 00:38:37 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 14/48] 95.25.84.200 () {38 vars in 703 bytes} [Tue Sep 20 00:38:37 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 35/49] 95.25.84.200 () {36 vars in 670 bytes} [Tue Sep 20 00:38:40 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 15/50] 95.25.84.200 () {38 vars in 703 bytes} [Tue Sep 20 00:38:42 2016] POST /favicon.ico => generated 2400 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 36/51] 101.200.126.64 () {36 vars in 484 bytes} [Tue Sep 20 01:22:02 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 37/52] 123.151.42.61 () {34 vars in 399 bytes} [Tue Sep 20 02:25:27 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 4656|app: 0|req: 38/53] 182.254.154.72 () {32 vars in 447 bytes} [Tue Sep 20 02:52:42 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 39/54] 163.172.173.181 () {30 vars in 411 bytes} [Tue Sep 20 03:02:18 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 4656|app: 0|req: 40/55] 182.254.154.72 () {32 vars in 447 bytes} [Tue Sep 20 03:29:09 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 4656|app: 0|req: 41/56] 91.236.75.4 () {38 vars in 556 bytes} [Tue Sep 20 03:39:33 2016] GET /reader/about/ => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 42/57] 42.156.251.187 () {36 vars in 587 bytes} [Tue Sep 20 05:01:39 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 43/58] 93.174.93.136 () {30 vars in 409 bytes} [Tue Sep 20 05:32:07 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 4656|app: 0|req: 44/59] 1.95.168.20 () {34 vars in 454 bytes} [Tue Sep 20 08:13:50 2016] GET /script => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4657|app: 0|req: 16/60] 80.82.78.38 () {30 vars in 407 bytes} [Tue Sep 20 08:14:03 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 4656|app: 0|req: 45/61] 182.254.154.72 () {32 vars in 447 bytes} [Tue Sep 20 13:25:33 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 46/62] 95.25.84.200 () {36 vars in 678 bytes} [Tue Sep 20 15:12:22 2016] GET /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 17/63] 95.25.84.200 () {38 vars in 704 bytes} [Tue Sep 20 15:12:22 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 47/64] 95.25.84.200 () {36 vars in 670 bytes} [Tue Sep 20 15:12:23 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 18/65] 95.25.84.200 () {38 vars in 703 bytes} [Tue Sep 20 15:12:24 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 48/66] 95.25.84.200 () {36 vars in 677 bytes} [Tue Sep 20 15:13:15 2016] GET /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 19/67] 95.25.84.200 () {38 vars in 703 bytes} [Tue Sep 20 15:13:15 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 49/68] 95.25.84.200 () {36 vars in 671 bytes} [Tue Sep 20 15:13:15 2016] GET /favicon.ico => generated 2394 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 20/69] 95.25.84.200 () {38 vars in 702 bytes} [Tue Sep 20 15:13:16 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 50/70] 123.151.42.61 () {34 vars in 399 bytes} [Tue Sep 20 15:15:24 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4656|app: 0|req: 51/71] 115.239.228.202 () {36 vars in 614 bytes} [Tue Sep 20 17:01:26 2016] GET /cgi-bin/common/attr?id=260714&r=0.8516104844082293 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 52/72] 101.200.78.64 () {26 vars in 288 bytes} [Tue Sep 20 18:40:17 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 53/73] 222.94.48.69 () {36 vars in 752 bytes} [Tue Sep 20 19:17:28 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 21/74] 222.94.48.69 () {36 vars in 691 bytes} [Tue Sep 20 19:17:33 2016] GET /favicon.ico => generated 2399 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 54/75] 222.94.48.69 () {36 vars in 691 bytes} [Tue Sep 20 19:17:33 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 22/76] 222.94.48.69 () {36 vars in 752 bytes} [Tue Sep 20 19:18:07 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 55/77] 222.94.48.69 () {36 vars in 691 bytes} [Tue Sep 20 19:18:08 2016] GET /favicon.ico => generated 2399 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 23/78] 222.94.48.69 () {36 vars in 691 bytes} [Tue Sep 20 19:18:08 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Zillia
+[pid: 4656|app: 0|req: 56/79] 222.94.48.69 () {38 vars in 725 bytes} [Tue Sep 20 19:19:37 2016] GET /Zillia => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 24/80] 101.226.65.104 () {36 vars in 543 bytes} [Tue Sep 20 19:20:27 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 57/81] 101.226.66.172 () {36 vars in 543 bytes} [Tue Sep 20 19:21:07 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /Zillia
+[pid: 4657|app: 0|req: 25/82] 106.120.160.109 () {36 vars in 625 bytes} [Tue Sep 20 19:22:43 2016] GET /Zillia => generated 2379 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Zillia
+[pid: 4656|app: 0|req: 58/83] 171.8.167.67 () {40 vars in 699 bytes} [Tue Sep 20 19:22:43 2016] GET /Zillia => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Zillia
+[pid: 4657|app: 0|req: 26/84] 182.140.230.19 () {40 vars in 701 bytes} [Tue Sep 20 19:22:43 2016] GET /Zillia => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Zillia
+[pid: 4656|app: 0|req: 59/85] 101.199.108.56 () {38 vars in 703 bytes} [Tue Sep 20 19:22:53 2016] GET /Zillia => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Zillia
+[pid: 4657|app: 0|req: 27/86] 182.140.230.19 () {42 vars in 770 bytes} [Tue Sep 20 19:22:56 2016] GET /Zillia => generated 2384 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Zillia
+[pid: 4656|app: 0|req: 60/87] 117.21.187.57 () {42 vars in 769 bytes} [Tue Sep 20 19:23:29 2016] GET /Zillia => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 61/88] 159.226.43.56 () {40 vars in 816 bytes} [Tue Sep 20 21:53:28 2016] GET /admin/ => generated 3447 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 28/89] 159.226.43.56 () {42 vars in 899 bytes} [Tue Sep 20 21:53:33 2016] GET /admin/backend/mypapers/ => generated 3071 bytes in 34 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 62/90] 159.226.43.56 () {40 vars in 790 bytes} [Tue Sep 20 21:53:33 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 29/91] 159.226.43.56 () {42 vars in 924 bytes} [Tue Sep 20 21:53:35 2016] GET /admin/backend/mypapers/add/ => generated 5848 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 63/92] 159.226.43.56 () {40 vars in 794 bytes} [Tue Sep 20 21:53:35 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4657|app: 0|req: 30/93] 115.239.228.202 () {36 vars in 614 bytes} [Tue Sep 20 21:55:25 2016] GET /cgi-bin/common/attr?id=260714&r=0.1594079542059790 => generated 2448 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 64/94] 159.226.43.56 () {50 vars in 1183 bytes} [Tue Sep 20 22:01:03 2016] POST /admin/backend/mypapers/add/ => generated 0 bytes in 51 msecs (HTTP/1.1 302) 8 headers in 531 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 31/95] 159.226.43.56 () {44 vars in 1161 bytes} [Tue Sep 20 22:01:03 2016] GET /admin/backend/mypapers/ => generated 6150 bytes in 70 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 65/96] 159.226.43.56 () {40 vars in 790 bytes} [Tue Sep 20 22:01:04 2016] GET /admin/jsi18n/ => generated 3217 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 66/97] 159.226.43.56 () {42 vars in 898 bytes} [Tue Sep 20 22:30:24 2016] GET /admin/backend/ => generated 2240 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 32/98] 159.226.43.56 () {42 vars in 907 bytes} [Tue Sep 20 22:30:27 2016] GET /admin/backend/mypapers/ => generated 5955 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 67/99] 159.226.43.56 () {40 vars in 790 bytes} [Tue Sep 20 22:30:28 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 4656|app: 0|req: 68/100] 114.55.174.64 () {32 vars in 486 bytes} [Tue Sep 20 23:20:04 2016] GET /manager/html => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 4656|app: 0|req: 69/101] 182.254.154.72 () {32 vars in 447 bytes} [Wed Sep 21 02:28:14 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4656|app: 0|req: 70/102] 115.239.228.202 () {36 vars in 614 bytes} [Wed Sep 21 02:48:32 2016] GET /cgi-bin/common/attr?id=260714&r=0.8204838098925167 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 71/103] 103.37.151.59 () {34 vars in 429 bytes} [Wed Sep 21 03:04:59 2016] GET /favicon.ico => generated 2393 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 72/104] 95.25.84.200 () {36 vars in 677 bytes} [Wed Sep 21 05:29:40 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 33/105] 95.25.84.200 () {38 vars in 703 bytes} [Wed Sep 21 05:29:40 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 73/106] 95.25.84.200 () {36 vars in 673 bytes} [Wed Sep 21 05:29:42 2016] GET /favicon.ico => generated 2395 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 34/107] 95.25.84.200 () {38 vars in 703 bytes} [Wed Sep 21 05:29:44 2016] POST /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 74/108] 95.25.84.200 () {36 vars in 678 bytes} [Wed Sep 21 05:30:29 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 35/109] 95.25.84.200 () {38 vars in 704 bytes} [Wed Sep 21 05:30:30 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 75/110] 95.25.84.200 () {36 vars in 672 bytes} [Wed Sep 21 05:30:32 2016] GET /favicon.ico => generated 2394 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4657|app: 0|req: 36/111] 95.25.84.200 () {38 vars in 703 bytes} [Wed Sep 21 05:30:34 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 76/112] 123.151.42.61 () {34 vars in 399 bytes} [Wed Sep 21 06:00:34 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 37/113] 42.156.251.185 () {36 vars in 587 bytes} [Wed Sep 21 06:01:11 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4656|app: 0|req: 77/114] 115.239.228.202 () {36 vars in 614 bytes} [Wed Sep 21 06:30:30 2016] GET /cgi-bin/common/attr?id=260714&r=0.3268366913778575 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 78/115] 80.82.78.38 () {30 vars in 407 bytes} [Wed Sep 21 06:37:16 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 4656|app: 0|req: 79/116] 122.228.215.3 () {34 vars in 456 bytes} [Wed Sep 21 06:51:57 2016] GET /script => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 4656|app: 0|req: 80/117] 91.236.75.4 () {38 vars in 556 bytes} [Wed Sep 21 07:58:50 2016] GET /reader/about/ => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 81/118] 163.172.134.70 () {30 vars in 410 bytes} [Wed Sep 21 08:34:51 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 82/119] 159.226.43.56 () {42 vars in 907 bytes} [Wed Sep 21 09:51:58 2016] GET /admin/backend/mypapers/ => generated 5955 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 38/120] 159.226.43.56 () {40 vars in 790 bytes} [Wed Sep 21 09:51:58 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 83/121] 159.226.43.56 () {40 vars in 786 bytes} [Wed Sep 21 09:51:58 2016] GET /favicon.ico => generated 2399 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 4656|app: 0|req: 84/122] 93.174.93.136 () {30 vars in 409 bytes} [Wed Sep 21 10:07:11 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 4656|app: 0|req: 85/123] 91.236.75.4 () {38 vars in 556 bytes} [Wed Sep 21 11:06:14 2016] GET /reader/about/ => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4656|app: 0|req: 86/124] 43.241.212.248 () {34 vars in 430 bytes} [Wed Sep 21 12:12:01 2016] GET /favicon.ico => generated 2393 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4656|app: 0|req: 87/125] 115.239.228.202 () {36 vars in 614 bytes} [Wed Sep 21 12:35:22 2016] GET /cgi-bin/common/attr?id=260714&r=0.2543379150226495 => generated 2448 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 4656|app: 0|req: 88/126] 115.239.228.202 () {36 vars in 614 bytes} [Wed Sep 21 15:01:39 2016] GET /cgi-bin/common/attr?id=260714&r=0.7802680797904390 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 89/127] 159.226.43.56 () {56 vars in 1492 bytes} [Wed Sep 21 15:25:08 2016] GET /admin/backend/mypapers/ => generated 5955 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 39/128] 159.226.43.56 () {54 vars in 1375 bytes} [Wed Sep 21 15:25:08 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 90/129] 159.226.43.56 () {42 vars in 898 bytes} [Wed Sep 21 15:25:09 2016] GET /admin/backend/ => generated 2240 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 40/130] 159.226.43.56 () {42 vars in 873 bytes} [Wed Sep 21 15:25:11 2016] GET /admin/ => generated 3780 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 91/131] 159.226.43.56 () {44 vars in 904 bytes} [Wed Sep 21 15:25:13 2016] GET /admin/ => generated 3780 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 41/132] 159.226.43.56 () {44 vars in 904 bytes} [Wed Sep 21 15:25:16 2016] GET /admin/ => generated 3780 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 92/133] 159.226.43.56 () {42 vars in 879 bytes} [Wed Sep 21 15:25:18 2016] GET /admin/logout/ => generated 1014 bytes in 61 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 42/134] 159.226.43.56 () {42 vars in 828 bytes} [Wed Sep 21 15:25:20 2016] GET /admin/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 43/135] 159.226.43.56 () {42 vars in 865 bytes} [Wed Sep 21 15:25:20 2016] GET /admin/login/?next=/admin/ => generated 1657 bytes in 17 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 4656|app: 0|req: 93/136] 159.226.43.56 () {50 vars in 1060 bytes} [Wed Sep 21 15:25:29 2016] POST /admin/login/?next=/admin/ => generated 0 bytes in 207 msecs (HTTP/1.1 302) 9 headers in 558 bytes (1 switches on core 0)
+[pid: 4657|app: 0|req: 44/137] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 15:25:29 2016] GET /admin/ => generated 3780 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+DAMN ! worker 2 (pid: 4657) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 8448)
+Wed Sep 21 15:26:09 2016 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Sep 21 15:26:09 2016 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 21 15:27:08 2016] ***
+compiled with version: 4.6.3 on 17 September 2016 16:18:30
+os: Linux-3.2.0-67-generic #101-Ubuntu SMP Tue Jul 15 17:46:11 UTC 2014
+nodename: iZ254lket7vZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/zillia/myFrame
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zillia/myFrame
+your processes number limit is 7815
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+Python version: 2.7.3 (default, Jun 22 2015, 19:44:33)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xf524c0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xf524c0 pid: 8479 (default app)
+spawned uWSGI master process (pid: 8479)
+spawned uWSGI worker 1 (pid: 8484, cores: 1)
+spawned uWSGI worker 2 (pid: 8485, cores: 1)
+[pid: 8485|app: 0|req: 1/1] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 15:27:12 2016] GET /admin/ => generated 3780 bytes in 66 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8484|app: 0|req: 1/2] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 18:21:57 2016] GET /admin/ => generated 3780 bytes in 69 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8485|app: 0|req: 2/3] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 18:22:00 2016] GET /admin/ => generated 3780 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8484|app: 0|req: 2/4] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 18:22:02 2016] GET /admin/ => generated 3780 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8484|app: 0|req: 3/5] 222.186.56.16 () {32 vars in 411 bytes} [Wed Sep 21 19:14:55 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8484|app: 0|req: 4/6] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 20:07:32 2016] GET /admin/ => generated 3780 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8485|app: 0|req: 3/7] 159.226.43.56 () {42 vars in 881 bytes} [Wed Sep 21 20:07:37 2016] GET /admin/backend/ => generated 2240 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8484|app: 0|req: 5/8] 159.226.43.56 () {42 vars in 887 bytes} [Wed Sep 21 20:08:00 2016] GET /admin/logout/ => generated 1014 bytes in 39 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 8485|app: 0|req: 4/9] 159.226.43.56 () {42 vars in 828 bytes} [Wed Sep 21 20:08:02 2016] GET /admin/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 8485|app: 0|req: 5/10] 159.226.43.56 () {42 vars in 865 bytes} [Wed Sep 21 20:08:02 2016] GET /admin/login/?next=/admin/ => generated 1657 bytes in 15 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 8484|app: 0|req: 6/11] 159.226.43.56 () {50 vars in 1060 bytes} [Wed Sep 21 20:08:08 2016] POST /admin/login/?next=/admin/ => generated 0 bytes in 214 msecs (HTTP/1.1 302) 9 headers in 558 bytes (1 switches on core 0)
+[pid: 8485|app: 0|req: 6/12] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 20:08:08 2016] GET /admin/ => generated 3780 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+Wed Sep 21 20:09:02 2016 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Sep 21 20:09:02 2016 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 21 20:09:23 2016] ***
+compiled with version: 4.6.3 on 17 September 2016 16:18:30
+os: Linux-3.2.0-67-generic #101-Ubuntu SMP Tue Jul 15 17:46:11 UTC 2014
+nodename: iZ254lket7vZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/zillia/myFrame
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zillia/myFrame
+your processes number limit is 7815
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+Python version: 2.7.3 (default, Jun 22 2015, 19:44:33)  [GCC 4.6.3]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x8b54b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x8b54b0 pid: 8743 (default app)
+spawned uWSGI master process (pid: 8743)
+spawned uWSGI worker 1 (pid: 8748, cores: 1)
+spawned uWSGI worker 2 (pid: 8749, cores: 1)
+[pid: 8749|app: 0|req: 1/1] 159.226.43.56 () {44 vars in 915 bytes} [Wed Sep 21 20:09:25 2016] GET /admin/ => generated 5007 bytes in 84 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 1/2] 159.226.43.56 () {42 vars in 901 bytes} [Wed Sep 21 20:09:33 2016] GET /admin/backend/mysidebar/ => generated 3083 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 2/3] 159.226.43.56 () {40 vars in 791 bytes} [Wed Sep 21 20:09:33 2016] GET /admin/jsi18n/ => generated 3217 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 2/4] 159.226.43.56 () {42 vars in 884 bytes} [Wed Sep 21 20:09:36 2016] GET /admin/ => generated 5007 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 3/5] 115.239.228.202 () {36 vars in 614 bytes} [Wed Sep 21 23:26:29 2016] GET /cgi-bin/common/attr?id=260714&r=0.1835418454560907 => generated 2448 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 4/6] 182.254.154.72 () {32 vars in 447 bytes} [Wed Sep 21 23:58:14 2016] GET /check_proxy.php => generated 2405 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 5/7] 123.151.42.61 () {34 vars in 399 bytes} [Thu Sep 22 02:37:51 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 8748|app: 0|req: 6/8] 1.95.168.20 () {34 vars in 454 bytes} [Thu Sep 22 02:43:29 2016] GET /script => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 7/9] 182.254.154.72 () {32 vars in 447 bytes} [Thu Sep 22 02:49:00 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 8/10] 101.200.126.64 () {36 vars in 484 bytes} [Thu Sep 22 04:51:15 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 9/11] 80.82.78.38 () {30 vars in 407 bytes} [Thu Sep 22 04:58:51 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 10/12] 42.156.251.185 () {36 vars in 587 bytes} [Thu Sep 22 05:01:35 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 11/13] 123.59.83.40 () {34 vars in 427 bytes} [Thu Sep 22 05:23:58 2016] GET /favicon.ico => generated 2393 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 12/14] 95.25.205.177 () {36 vars in 678 bytes} [Thu Sep 22 09:45:29 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 3/15] 95.25.205.177 () {38 vars in 704 bytes} [Thu Sep 22 09:45:30 2016] POST /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 13/16] 95.25.205.177 () {36 vars in 673 bytes} [Thu Sep 22 09:45:31 2016] GET /favicon.ico => generated 2394 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 4/17] 95.25.205.177 () {38 vars in 705 bytes} [Thu Sep 22 09:45:33 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 14/18] 95.25.205.177 () {36 vars in 678 bytes} [Thu Sep 22 09:46:39 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 5/19] 95.25.205.177 () {38 vars in 704 bytes} [Thu Sep 22 09:46:39 2016] POST /favicon.ico => generated 2401 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 15/20] 95.25.205.177 () {36 vars in 672 bytes} [Thu Sep 22 09:46:41 2016] GET /favicon.ico => generated 2394 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 6/21] 95.25.205.177 () {38 vars in 703 bytes} [Thu Sep 22 09:46:43 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 16/22] 182.254.154.72 () {32 vars in 447 bytes} [Thu Sep 22 11:17:56 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 17/23] 222.186.56.16 () {32 vars in 411 bytes} [Thu Sep 22 12:06:21 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 8748|app: 0|req: 18/24] 91.236.75.4 () {38 vars in 556 bytes} [Thu Sep 22 12:25:06 2016] GET /reader/about/ => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 19/25] 50.200.254.14 () {30 vars in 319 bytes} [Thu Sep 22 12:54:43 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 20/26] 222.186.56.16 () {32 vars in 411 bytes} [Thu Sep 22 13:06:37 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 21/27] 212.47.246.179 () {30 vars in 410 bytes} [Thu Sep 22 13:59:22 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 22/28] 219.135.225.32 () {38 vars in 564 bytes} [Thu Sep 22 14:32:42 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Forbidden (CSRF cookie not set.): /
+[pid: 8748|app: 0|req: 23/29] 31.24.228.20 () {30 vars in 388 bytes} [Thu Sep 22 14:38:53 2016] POST / => generated 2857 bytes in 29 msecs (HTTP/1.0 403) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 7/30] 159.226.43.56 () {56 vars in 1469 bytes} [Thu Sep 22 14:39:36 2016] GET /admin/ => generated 5007 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 24/31] 159.226.43.56 () {56 vars in 1376 bytes} [Thu Sep 22 14:39:37 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 8748|app: 0|req: 25/32] 91.236.75.4 () {38 vars in 556 bytes} [Thu Sep 22 18:45:42 2016] GET /reader/about/ => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 8748|app: 0|req: 26/33] 114.215.201.27 () {34 vars in 457 bytes} [Thu Sep 22 18:58:17 2016] GET /script => generated 2384 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 8748|app: 0|req: 27/34] 101.200.137.33 () {32 vars in 487 bytes} [Thu Sep 22 20:15:53 2016] GET /manager/html => generated 2402 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 28/35] 182.254.154.72 () {32 vars in 447 bytes} [Thu Sep 22 20:29:56 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 29/36] 159.226.43.56 () {40 vars in 816 bytes} [Thu Sep 22 21:52:58 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 8/37] 159.226.43.56 () {40 vars in 816 bytes} [Thu Sep 22 21:53:02 2016] GET /admin/ => generated 5007 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 30/38] 159.226.43.56 () {42 vars in 897 bytes} [Thu Sep 22 21:53:05 2016] GET /admin/backend/mynotes/ => generated 3064 bytes in 36 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 9/39] 159.226.43.56 () {40 vars in 789 bytes} [Thu Sep 22 21:53:05 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 31/40] 159.226.43.56 () {42 vars in 921 bytes} [Thu Sep 22 21:53:07 2016] GET /admin/backend/mynotes/add/ => generated 6248 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 10/41] 159.226.43.56 () {40 vars in 793 bytes} [Thu Sep 22 21:53:07 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 32/42] 103.37.145.235 () {34 vars in 430 bytes} [Thu Sep 22 21:54:26 2016] GET /favicon.ico => generated 2393 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 11/43] 159.226.43.56 () {50 vars in 1180 bytes} [Thu Sep 22 21:55:10 2016] POST /admin/backend/mynotes/add/ => generated 0 bytes in 52 msecs (HTTP/1.1 302) 8 headers in 527 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 33/44] 159.226.43.56 () {44 vars in 1155 bytes} [Thu Sep 22 21:55:10 2016] GET /admin/backend/mynotes/ => generated 5751 bytes in 46 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 12/45] 159.226.43.56 () {40 vars in 789 bytes} [Thu Sep 22 21:55:10 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 34/46] 159.226.43.56 () {42 vars in 931 bytes} [Thu Sep 22 21:55:32 2016] GET /admin/backend/mynotes/1/change/ => generated 6793 bytes in 43 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 13/47] 159.226.43.56 () {40 vars in 798 bytes} [Thu Sep 22 21:55:32 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 35/48] 159.226.43.56 () {50 vars in 1195 bytes} [Thu Sep 22 21:56:11 2016] POST /admin/backend/mynotes/1/change/ => generated 0 bytes in 37 msecs (HTTP/1.1 302) 8 headers in 529 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 14/49] 159.226.43.56 () {44 vars in 1162 bytes} [Thu Sep 22 21:56:11 2016] GET /admin/backend/mynotes/ => generated 5808 bytes in 41 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 36/50] 159.226.43.56 () {40 vars in 789 bytes} [Thu Sep 22 21:56:11 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 37/51] 159.226.43.56 () {42 vars in 931 bytes} [Thu Sep 22 22:26:59 2016] GET /admin/backend/mynotes/1/change/ => generated 6848 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 15/52] 159.226.43.56 () {40 vars in 798 bytes} [Thu Sep 22 22:26:59 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 38/53] 159.226.43.56 () {50 vars in 1195 bytes} [Thu Sep 22 22:28:56 2016] POST /admin/backend/mynotes/1/change/ => generated 0 bytes in 28 msecs (HTTP/1.1 302) 8 headers in 529 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 16/54] 159.226.43.56 () {44 vars in 1162 bytes} [Thu Sep 22 22:28:56 2016] GET /admin/backend/mynotes/ => generated 6131 bytes in 42 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 39/55] 159.226.43.56 () {40 vars in 789 bytes} [Thu Sep 22 22:28:56 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 8748|app: 0|req: 40/56] 119.10.52.245 () {34 vars in 456 bytes} [Thu Sep 22 23:12:11 2016] GET /script => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /command.php
+[pid: 8748|app: 0|req: 41/57] 187.160.110.120 () {36 vars in 526 bytes} [Fri Sep 23 01:12:15 2016] POST /command.php => generated 2395 bytes in 4 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 8748|app: 0|req: 42/58] 1.95.168.20 () {34 vars in 454 bytes} [Fri Sep 23 02:23:35 2016] GET /script => generated 2384 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 43/59] 115.239.228.202 () {36 vars in 614 bytes} [Fri Sep 23 02:45:59 2016] GET /cgi-bin/common/attr?id=260714&r=0.3002592642222843 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 44/60] 95.25.205.177 () {36 vars in 678 bytes} [Fri Sep 23 02:55:43 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 17/61] 95.25.205.177 () {38 vars in 704 bytes} [Fri Sep 23 02:55:43 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 45/62] 95.25.205.177 () {36 vars in 672 bytes} [Fri Sep 23 02:55:46 2016] GET /favicon.ico => generated 2393 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 18/63] 95.25.205.177 () {38 vars in 705 bytes} [Fri Sep 23 02:55:48 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 46/64] 95.25.205.177 () {36 vars in 679 bytes} [Fri Sep 23 02:56:47 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 19/65] 95.25.205.177 () {38 vars in 705 bytes} [Fri Sep 23 02:56:47 2016] POST /favicon.ico => generated 2401 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 47/66] 95.25.205.177 () {36 vars in 673 bytes} [Fri Sep 23 02:56:51 2016] GET /favicon.ico => generated 2394 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 20/67] 95.25.205.177 () {38 vars in 704 bytes} [Fri Sep 23 02:56:54 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /jmx-console/HtmlAdaptor
+[pid: 8748|app: 0|req: 48/68] 1.214.89.69 () {36 vars in 501 bytes} [Fri Sep 23 03:05:43 2016] GET //jmx-console/HtmlAdaptor => generated 2430 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 49/69] 80.82.78.38 () {30 vars in 407 bytes} [Fri Sep 23 03:12:22 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 50/70] 182.254.154.72 () {32 vars in 447 bytes} [Fri Sep 23 03:59:45 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 51/71] 42.156.251.188 () {36 vars in 586 bytes} [Fri Sep 23 05:01:14 2016] GET / => generated 69011 bytes in 30 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 52/72] 94.102.49.174 () {30 vars in 409 bytes} [Fri Sep 23 07:48:03 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 53/73] 103.37.151.59 () {34 vars in 429 bytes} [Fri Sep 23 08:29:38 2016] GET /favicon.ico => generated 2393 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 54/74] 159.226.43.56 () {56 vars in 1507 bytes} [Fri Sep 23 09:15:27 2016] GET /admin/backend/mynotes/ => generated 5937 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 21/75] 159.226.43.56 () {54 vars in 1374 bytes} [Fri Sep 23 09:15:27 2016] GET /admin/jsi18n/ => generated 3217 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 55/76] 159.226.43.56 () {40 vars in 785 bytes} [Fri Sep 23 09:15:27 2016] GET /favicon.ico => generated 2399 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 8748|app: 0|req: 56/77] 139.129.220.107 () {32 vars in 488 bytes} [Fri Sep 23 11:15:38 2016] GET /manager/html => generated 2402 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 57/78] 123.151.42.61 () {34 vars in 399 bytes} [Fri Sep 23 14:55:06 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 58/79] 182.254.154.72 () {32 vars in 447 bytes} [Fri Sep 23 17:06:34 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 59/80] 115.239.228.202 () {36 vars in 614 bytes} [Fri Sep 23 17:22:12 2016] GET /cgi-bin/common/attr?id=260714&r=0.1237702695140691 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /if youve had a dose of a freaky ghost
+[pid: 8748|app: 0|req: 60/81] 63.143.57.26 () {34 vars in 637 bytes} [Fri Sep 23 17:48:58 2016] GET /if%20youve%20had%20a%20dose%20of%20a%20freaky%20ghost => generated 2493 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /status
+[pid: 8749|app: 0|req: 22/82] 63.143.57.26 () {34 vars in 578 bytes} [Fri Sep 23 17:48:58 2016] GET /status?full=true => generated 2394 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 61/83] 101.200.126.64 () {36 vars in 484 bytes} [Fri Sep 23 17:56:01 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 62/84] 222.186.56.16 () {32 vars in 411 bytes} [Fri Sep 23 18:14:28 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 63/85] 93.174.93.136 () {30 vars in 409 bytes} [Fri Sep 23 19:12:05 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 64/86] 95.25.205.177 () {36 vars in 679 bytes} [Fri Sep 23 19:18:29 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 23/87] 95.25.205.177 () {38 vars in 705 bytes} [Fri Sep 23 19:18:30 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 65/88] 95.25.205.177 () {36 vars in 671 bytes} [Fri Sep 23 19:18:31 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 24/89] 95.25.205.177 () {38 vars in 705 bytes} [Fri Sep 23 19:18:33 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 66/90] 95.25.205.177 () {36 vars in 678 bytes} [Fri Sep 23 19:19:24 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 25/91] 95.25.205.177 () {38 vars in 704 bytes} [Fri Sep 23 19:19:24 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 67/92] 95.25.205.177 () {36 vars in 671 bytes} [Fri Sep 23 19:19:25 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 26/93] 95.25.205.177 () {38 vars in 704 bytes} [Fri Sep 23 19:19:25 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 68/94] 159.226.43.56 () {40 vars in 804 bytes} [Fri Sep 23 20:00:14 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 27/95] 159.226.43.56 () {40 vars in 816 bytes} [Fri Sep 23 20:01:23 2016] GET /zillia => generated 15811 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 69/96] 159.226.43.56 () {42 vars in 847 bytes} [Fri Sep 23 20:07:40 2016] GET /zillia => generated 17615 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 8748|app: 0|req: 70/97] 114.55.174.64 () {32 vars in 486 bytes} [Fri Sep 23 21:26:17 2016] GET /manager/html => generated 2402 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 71/98] 182.254.154.72 () {32 vars in 447 bytes} [Fri Sep 23 22:16:55 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 72/99] 217.23.10.229 () {28 vars in 317 bytes} [Sat Sep 24 00:35:36 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 28/100] 217.23.10.229 () {28 vars in 317 bytes} [Sat Sep 24 00:37:02 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 73/101] 80.82.78.38 () {30 vars in 407 bytes} [Sat Sep 24 01:13:17 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 74/102] 123.151.42.61 () {34 vars in 399 bytes} [Sat Sep 24 01:52:41 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 8748|app: 0|req: 75/103] 91.236.75.4 () {38 vars in 556 bytes} [Sat Sep 24 03:16:51 2016] GET /reader/about/ => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 76/104] 42.156.251.187 () {36 vars in 587 bytes} [Sat Sep 24 05:00:50 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 77/105] 115.239.228.202 () {36 vars in 614 bytes} [Sat Sep 24 05:35:08 2016] GET /cgi-bin/common/attr?id=260714&r=0.0296234713412011 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 8748|app: 0|req: 78/106] 118.244.131.156 () {34 vars in 458 bytes} [Sat Sep 24 06:42:15 2016] GET /script => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 79/107] 114.215.239.201 () {26 vars in 290 bytes} [Sat Sep 24 07:46:44 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 80/108] 95.25.205.177 () {36 vars in 679 bytes} [Sat Sep 24 13:05:35 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 29/109] 95.25.205.177 () {38 vars in 705 bytes} [Sat Sep 24 13:05:36 2016] POST /favicon.ico => generated 2401 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 81/110] 95.25.205.177 () {36 vars in 673 bytes} [Sat Sep 24 13:05:36 2016] GET /favicon.ico => generated 2394 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 30/111] 95.25.205.177 () {38 vars in 705 bytes} [Sat Sep 24 13:05:37 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 82/112] 95.25.205.177 () {36 vars in 679 bytes} [Sat Sep 24 13:06:39 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 31/113] 95.25.205.177 () {38 vars in 705 bytes} [Sat Sep 24 13:06:39 2016] POST /favicon.ico => generated 2401 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 83/114] 95.25.205.177 () {36 vars in 671 bytes} [Sat Sep 24 13:06:40 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 32/115] 95.25.205.177 () {38 vars in 705 bytes} [Sat Sep 24 13:06:41 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 84/116] 123.151.42.61 () {34 vars in 399 bytes} [Sat Sep 24 14:02:32 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 8748|app: 0|req: 85/117] 114.55.174.64 () {32 vars in 486 bytes} [Sat Sep 24 16:54:35 2016] GET /manager/html => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 86/118] 112.74.206.117 () {26 vars in 288 bytes} [Sat Sep 24 17:00:04 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 87/119] 93.174.93.194 () {28 vars in 358 bytes} [Sat Sep 24 17:23:36 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 88/120] 182.254.154.72 () {32 vars in 447 bytes} [Sat Sep 24 17:26:37 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 89/121] 115.239.228.202 () {36 vars in 614 bytes} [Sat Sep 24 17:48:32 2016] GET /cgi-bin/common/attr?id=260714&r=0.6488775244517055 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 90/122] 182.254.154.72 () {32 vars in 447 bytes} [Sat Sep 24 21:58:23 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 91/123] 115.239.228.202 () {36 vars in 614 bytes} [Sat Sep 24 22:41:27 2016] GET /cgi-bin/common/attr?id=260714&r=0.4399052494166120 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 92/124] 80.82.78.38 () {30 vars in 407 bytes} [Sat Sep 24 23:21:32 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 93/125] 172.82.166.210 () {30 vars in 410 bytes} [Sat Sep 24 23:45:47 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 94/126] 94.102.49.174 () {30 vars in 409 bytes} [Sun Sep 25 00:10:03 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 95/127] 79.173.115.211 () {34 vars in 399 bytes} [Sun Sep 25 00:33:09 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 96/128] 123.151.42.61 () {34 vars in 399 bytes} [Sun Sep 25 01:32:24 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 97/129] 121.199.70.200 () {26 vars in 288 bytes} [Sun Sep 25 02:20:13 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 98/130] 74.82.47.3 () {26 vars in 280 bytes} [Sun Sep 25 05:45:52 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 99/131] 42.156.251.188 () {36 vars in 587 bytes} [Sun Sep 25 06:01:22 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 33/132] 95.25.205.177 () {36 vars in 678 bytes} [Sun Sep 25 06:03:11 2016] GET /favicon.ico => generated 2399 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 100/133] 95.25.205.177 () {38 vars in 704 bytes} [Sun Sep 25 06:03:11 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 34/134] 95.25.205.177 () {36 vars in 673 bytes} [Sun Sep 25 06:03:13 2016] GET /favicon.ico => generated 2394 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 101/135] 95.25.205.177 () {38 vars in 704 bytes} [Sun Sep 25 06:03:16 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 35/136] 95.25.205.177 () {36 vars in 679 bytes} [Sun Sep 25 06:04:08 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 102/137] 95.25.205.177 () {38 vars in 705 bytes} [Sun Sep 25 06:04:08 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 36/138] 95.25.205.177 () {36 vars in 671 bytes} [Sun Sep 25 06:04:08 2016] GET /favicon.ico => generated 2392 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 103/139] 95.25.205.177 () {38 vars in 705 bytes} [Sun Sep 25 06:04:09 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 104/140] 216.218.206.68 () {26 vars in 284 bytes} [Sun Sep 25 06:43:18 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 105/141] 115.239.228.202 () {36 vars in 614 bytes} [Sun Sep 25 07:14:58 2016] GET /cgi-bin/common/attr?id=260714&r=0.5414639474126223 => generated 2448 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 106/142] 43.241.210.248 () {34 vars in 430 bytes} [Sun Sep 25 07:34:41 2016] GET /favicon.ico => generated 2393 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 8748|app: 0|req: 107/143] 91.236.75.4 () {38 vars in 556 bytes} [Sun Sep 25 08:58:51 2016] GET /reader/about/ => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8749|app: 0|req: 37/144] 79.228.98.61 () {34 vars in 417 bytes} [Sun Sep 25 09:00:41 2016] GET / => generated 69011 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /nice ports,/Trinity.txt.bak
+[pid: 8748|app: 0|req: 108/145] 79.228.98.61 () {24 vars in 317 bytes} [Sun Sep 25 09:00:46 2016] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 2449 bytes in 4 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 109/146] 182.254.154.72 () {32 vars in 447 bytes} [Sun Sep 25 11:10:27 2016] GET /check_proxy.php => generated 2405 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 110/147] 123.56.233.103 () {26 vars in 287 bytes} [Sun Sep 25 12:06:56 2016] GET / => generated 69011 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /script
+[pid: 8748|app: 0|req: 111/148] 119.10.52.245 () {34 vars in 456 bytes} [Sun Sep 25 12:17:05 2016] GET /script => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 112/149] 60.191.52.254 () {32 vars in 418 bytes} [Sun Sep 25 13:29:51 2016] HEAD / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 113/150] 103.37.146.157 () {34 vars in 430 bytes} [Sun Sep 25 15:21:26 2016] GET /favicon.ico => generated 2393 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 114/151] 101.200.126.64 () {36 vars in 484 bytes} [Sun Sep 25 16:25:51 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 115/152] 115.239.228.202 () {36 vars in 614 bytes} [Sun Sep 25 18:15:50 2016] GET /cgi-bin/common/attr?id=260714&r=0.9750121995560273 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 116/153] 182.254.154.72 () {32 vars in 447 bytes} [Sun Sep 25 20:09:53 2016] GET /check_proxy.php => generated 2405 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 117/154] 121.199.70.200 () {26 vars in 288 bytes} [Sun Sep 25 21:19:09 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 118/155] 80.82.78.38 () {30 vars in 407 bytes} [Sun Sep 25 21:24:21 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 119/156] 49.64.81.249 () {32 vars in 449 bytes} [Sun Sep 25 22:06:55 2016] GET / => generated 69011 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /HNAP1/
+[pid: 8749|app: 0|req: 38/157] 49.64.81.249 () {32 vars in 461 bytes} [Sun Sep 25 22:06:55 2016] GET /HNAP1/ => generated 2384 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 120/158] 95.25.205.177 () {36 vars in 678 bytes} [Sun Sep 25 22:08:30 2016] GET /favicon.ico => generated 2399 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 39/159] 95.25.205.177 () {38 vars in 704 bytes} [Sun Sep 25 22:08:30 2016] POST /favicon.ico => generated 2400 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 121/160] 95.25.205.177 () {36 vars in 671 bytes} [Sun Sep 25 22:08:30 2016] GET /favicon.ico => generated 2392 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 40/161] 95.25.205.177 () {38 vars in 704 bytes} [Sun Sep 25 22:08:31 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 122/162] 95.25.205.177 () {36 vars in 679 bytes} [Sun Sep 25 22:10:06 2016] GET /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 41/163] 95.25.205.177 () {38 vars in 705 bytes} [Sun Sep 25 22:10:06 2016] POST /favicon.ico => generated 2401 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8748|app: 0|req: 123/164] 95.25.205.177 () {36 vars in 673 bytes} [Sun Sep 25 22:10:08 2016] GET /favicon.ico => generated 2394 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 42/165] 95.25.205.177 () {38 vars in 704 bytes} [Sun Sep 25 22:10:10 2016] POST /favicon.ico => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 8748|app: 0|req: 124/166] 121.41.10.106 () {32 vars in 486 bytes} [Sun Sep 25 22:41:40 2016] GET /manager/html => generated 2402 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 8748|app: 0|req: 125/167] 121.41.10.106 () {32 vars in 486 bytes} [Sun Sep 25 23:03:39 2016] GET /manager/html => generated 2402 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 126/168] 182.254.154.72 () {32 vars in 447 bytes} [Mon Sep 26 03:41:12 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 127/169] 115.239.228.202 () {36 vars in 614 bytes} [Mon Sep 26 04:02:46 2016] GET /cgi-bin/common/attr?id=260714&r=0.6346154324379801 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 128/170] 93.174.93.136 () {30 vars in 409 bytes} [Mon Sep 26 04:11:35 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 129/171] 222.186.56.16 () {32 vars in 411 bytes} [Mon Sep 26 05:06:03 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/common/attr
+[pid: 8748|app: 0|req: 130/172] 115.239.228.202 () {36 vars in 614 bytes} [Mon Sep 26 05:15:47 2016] GET /cgi-bin/common/attr?id=260714&r=0.8441867554981155 => generated 2448 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 131/173] 101.200.126.64 () {36 vars in 484 bytes} [Mon Sep 26 11:37:02 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /ip_json.php
+[pid: 8748|app: 0|req: 132/174] 179.99.200.39 () {40 vars in 703 bytes} [Mon Sep 26 12:48:55 2016] GET /ip_json.php => generated 2403 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Forbidden (CSRF cookie not set.): /
+[pid: 8748|app: 0|req: 133/175] 31.24.228.20 () {30 vars in 388 bytes} [Mon Sep 26 13:41:46 2016] POST / => generated 2857 bytes in 3 msecs (HTTP/1.0 403) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /check_proxy.php
+[pid: 8748|app: 0|req: 134/176] 182.254.154.72 () {32 vars in 447 bytes} [Mon Sep 26 13:58:28 2016] GET /check_proxy.php => generated 2405 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 135/177] 94.102.49.174 () {30 vars in 409 bytes} [Mon Sep 26 16:29:16 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /reader/about/
+[pid: 8748|app: 0|req: 136/178] 91.236.75.4 () {38 vars in 556 bytes} [Mon Sep 26 17:43:39 2016] GET /reader/about/ => generated 2400 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 137/179] 114.215.239.201 () {26 vars in 290 bytes} [Mon Sep 26 18:20:51 2016] GET / => generated 69011 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 8748|app: 0|req: 138/180] 80.82.78.38 () {30 vars in 407 bytes} [Mon Sep 26 19:29:01 2016] GET /cache/global/img/gs.gif => generated 2429 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 139/181] 159.226.43.56 () {54 vars in 1463 bytes} [Mon Sep 26 21:10:17 2016] GET /zillia => generated 17615 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8749|app: 0|req: 43/182] 159.226.43.56 () {40 vars in 769 bytes} [Mon Sep 26 21:10:20 2016] GET /favicon.ico => generated 2399 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi/common.cgi
+[pid: 8748|app: 0|req: 140/183] 189.219.147.182 () {30 vars in 361 bytes} [Mon Sep 26 21:36:27 2016] GET /cgi/common.cgi => generated 2403 bytes in 4 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /stssys.htm
+[pid: 8749|app: 0|req: 44/184] 189.219.147.182 () {30 vars in 353 bytes} [Mon Sep 26 21:36:28 2016] GET /stssys.htm => generated 2391 bytes in 4 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8748|app: 0|req: 141/185] 189.219.147.182 () {30 vars in 333 bytes} [Mon Sep 26 21:36:28 2016] GET / => generated 69011 bytes in 15 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /command.php
+[pid: 8749|app: 0|req: 45/186] 189.219.147.182 () {36 vars in 526 bytes} [Mon Sep 26 21:36:30 2016] POST /command.php => generated 2395 bytes in 4 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)

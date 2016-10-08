@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load djangomarkdown %}
+
+{% block title %}Zillias--Papers{% endblock %}
+
+{% block page_location %}Papers{% endblock %}
+{% block page_location_list %}
+    <li><a href="zillia"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Papers</li>
+{% endblock %}
+
+{% block main_content %}
+
+    <section class="invoice">
+        <!--id = models.AutoField(primary_key=True)
+        abstract = models.TextField()
+        notes = models.TextField()
+        state = models.IntegerField(default=2)          # 0 already known; 1 to be reread; 2 to be implemented
+        tag = models.TextField(default=None, null=True)-->
+        <!-- name -->
+        <div class="row">
+            <div class="col-xs-12">
+                <form action="/submit_paper_edit/{{ paper_info.0 }}" method="post">
+                    {% csrf_token %}
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="input-group margin">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-success" disabled>TITLE</button>
+                                </div>
+                                <input type="text" name="title" class="form-control" value="{{ paper_info.1 }}">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-5">
+                            <div class="input-group margin">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-warning" disabled>TIME</button>
+                                </div>
+                                <input type="text" name="time" class="form-control" value="{{ paper_info.2 }}">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-1"></div>
+
+                        <div class="col-xs-1">
+                            <div class="margin">
+                                <label>STATE</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="margin">
+                                <div class="form-group">
+                                    <select class="form-control" name="state">
+                                        <option style="background-color: #3c8dbc">already known</option>
+                                        <option style="background-color: #f39c12">to be reread</option>
+                                        <option style="background-color: #f56954">to be implemented</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="input-group margin">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-success" disabled>AUTHORS</button>
+                                </div>
+                                <input type="text" name="authors" class="form-control" value="{{ paper_info.5 }}">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="input-group margin">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-warning" disabled>INSTITUTIONS</button>
+                                </div>
+                                <input type="text" name="institutions" class="form-control" value="{{ paper_info.6 }}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group margin">
+                                <label>Abstract</label>
+                                <textarea name="abstract" class="form-control" rows="15">{{ paper_info.7 }}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="form-group margin">
+                                <label>Notes</label>
+                                <textarea name="notes" class="form-control" rows="30">{{ paper_info.8 }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="margin pull-right">
+                                <button type="submit" class="btn btn-primary">SAVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}

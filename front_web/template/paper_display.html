@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load djangomarkdown %}
+
+{% block title %}Zillias--Papers{% endblock %}
+
+{% block page_location %}Papers{% endblock %}
+{% block page_location_list %}
+    <li><a href="zillia"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Papers</li>
+{% endblock %}
+
+{% block main_content %}
+
+    {% for paper in papers_list %}
+        <section class="invoice">
+            <!--id = models.AutoField(primary_key=True)
+            abstract = models.TextField()
+            notes = models.TextField()
+            state = models.IntegerField(default=2)          # 0 already known; 1 to be reread; 2 to be implemented
+            tag = models.TextField(default=None, null=True)-->
+            <!-- name -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="page-header">
+                        <i class="fa fa-paperclip"></i> <a href="/paper_detail/{{ paper.0 }}">{{ paper.1 }}</a>
+                        <small class="pull-right">Date: {{ paper.2 }}</small>
+                    </h2>
+                </div>
+                <div class="col-xs-3">
+                    <p><code style="background-color: {{ paper.3 }}; color: #000000">{{ paper.4 }}</code></p>
+                </div>
+            </div>
+
+            <div class="row invoice-info">
+                <div class="col-sm-3 invoice-col">
+                    <strong>Authors</strong>
+                </div>
+                <div class="col-sm-9 invoice-col">
+                    <strong>{{ paper.5 }}</strong>
+                </div>
+
+                <div class="col-sm-3 invoice-col">
+                    <strong>Institutions</strong>
+                </div>
+                <div class="col-sm-9 invoice-col">
+                    <strong>{{ paper.6 }}</strong>
+                </div>
+
+                <div class="col-sm-12">
+                    <strong>Abstract</strong>
+                </div>
+
+                <div class="col-sm-1"></div>
+                <div class="col-sm-11">
+                    {{ paper.7|djangomarkdown }}
+                </div>
+            </div>
+
+        </section>
+    {% endfor %}
+
+{% endblock %}

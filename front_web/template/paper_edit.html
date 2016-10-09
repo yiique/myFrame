@@ -3,10 +3,29 @@
 
 {% block title %}Zillias--Papers{% endblock %}
 
+{% block sidebar_menu %}
+    {% for bar in sidebar %}
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-sticky-note-o"></i> <span>{{ bar }}</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="index.html"><i class="fa fa-circle-o"></i> Papers&Slides </a></li>
+                <li><a href="index.html"><i class="fa fa-circle-o"></i> Books </a></li>
+                <li><a href="index.html"><i class="fa fa-circle-o"></i> Notes </a></li>
+            </ul>
+        </li>
+    {% endfor %}
+{% endblock %}
+
 {% block page_location %}Papers{% endblock %}
 {% block page_location_list %}
-    <li><a href="zillia"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Papers</li>
+    <li><a href="/zillia"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="/paper_lists">Papers</a></li>
+    <li class="active">paper_edit</li>
 {% endblock %}
 
 {% block main_content %}
@@ -42,8 +61,6 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-1"></div>
-
                         <div class="col-xs-1">
                             <div class="margin">
                                 <label>STATE</label>
@@ -60,6 +77,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="row">
@@ -80,6 +98,7 @@
                                 <input type="text" name="institutions" class="form-control" value="{{ paper_info.6 }}">
                             </div>
                         </div>
+                        
                     </div>
 
                     <div class="row">

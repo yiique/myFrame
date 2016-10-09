@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^paper_detail/(.+)$', views.paper_detail, name=''),
     url(r'^paper_edit/(.+)$', views.paper_edit, name=''),
     url(r'^submit_paper_edit/(.+)$', views.submit_paper_edit, name=''),
+    url(r'^delete_paper/(.+)$', views.delete_paper, name=''),
 ]

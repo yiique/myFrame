@@ -9,27 +9,45 @@ from django.shortcuts import render
 from backend.models import *
 from forms import *
 
+import json
+
 
 def demo_index(request):
     return render(request, 'demo_index.html', '')
 
 
+def load_context():
+    context = {}
+
+    sidebar = [x.entry_name for x in MySideBar.objects.all()]
+    context['sidebar'] = sidebar
+
+    return context
+
+
 def index(request):
-    return render(request, 'index.html', '')
+    context = load_context()
+
+    context['papers'] = len(MyPapers.objects.all())
+    context['books'] = len(MyNotes.objects.filter(type=0))
+    context['notes'] = len(MyNotes.objects.filter(type=1))
+
+    return render(request, 'index.html', context)
 
 
 def paper_lists(request):
+    context = load_context()
+
     papers_list_objects = MyPapers.objects.all()
     papers_list = []
 
     for paper in papers_list_objects:
-        paper_info = [paper.id, paper.name, paper.time, paper.authors, paper.institutions, paper.abstract]
-        color = "#000000"
-        state_label = ""
-        if paper.state == '0':
+        paper_info = [paper.id, paper.name, paper.time, paper.authors, paper.institutions,
+                      paper.abstract, json.loads(paper.tag)]
+        if paper.state == 0:
             color = "#3c8dbc"
             state_label = "already known"
-        elif paper.state == '1':
+        elif paper.state == 1:
             color = "#f39c12"
             state_label = "to be reread"
         else:
@@ -40,22 +58,22 @@ def paper_lists(request):
 
         papers_list.append(paper_info)
 
-    context = {'papers_list': papers_list}
+    context['papers_list'] = papers_list
 
     return render(request, 'paper_display.html', context)
 
 
 def paper_detail(request, paper_id):
-    paper_object = MyPapers.objects.filter(id=int(paper_id))[0]
+    context = load_context()
 
+    paper_object = MyPapers.objects.filter(id=int(paper_id))[0]
     paper_info = [paper_object.id, paper_object.name, paper_object.time, paper_object.authors,
-                  paper_object.institutions, paper_object.abstract, paper_object.notes]
-    color = "#000000"
-    state_label = ""
-    if paper_object.state == '0':
+                  paper_object.institutions, paper_object.abstract, paper_object.notes, json.loads(paper_object.tag)]
+
+    if paper_object.state == 0:
         color = "#3c8dbc"
         state_label = "already known"
-    elif paper_object.state == '1':
+    elif paper_object.state == 1:
         color = "#f39c12"
         state_label = "to be reread"
     else:
@@ -64,22 +82,27 @@ def paper_detail(request, paper_id):
     paper_info.insert(3, color)
     paper_info.insert(4, state_label)
 
-    context = {'paper_info': paper_info}
+    context['paper_info'] = paper_info
 
     return render(request, 'paper_detail.html', context)
 
 
 def paper_edit(request, paper_id):
-    paper_object = MyPapers.objects.filter(id=int(paper_id))[0]
+    context = load_context()
 
+    if paper_id == 'new':
+        context = {'paper_info': ['new']}
+
+        return render(request, 'paper_edit.html', context)
+
+    paper_object = MyPapers.objects.filter(id=int(paper_id))[0]
     paper_info = [paper_object.id, paper_object.name, paper_object.time, paper_object.authors,
-                  paper_object.institutions, paper_object.abstract, paper_object.notes]
-    color = "#000000"
-    state_label = ""
-    if paper_object.state == '0':
+                  paper_object.institutions, paper_object.abstract, paper_object.notes, json.loads(paper_object.tag)]
+
+    if paper_object.state == 0:
         color = "#3c8dbc"
         state_label = "already known"
-    elif paper_object.state == '1':
+    elif paper_object.state == 1:
         color = "#f39c12"
         state_label = "to be reread"
     else:
@@ -88,13 +111,16 @@ def paper_edit(request, paper_id):
     paper_info.insert(3, color)
     paper_info.insert(4, state_label)
 
-    context = {'paper_info': paper_info}
+    context['paper_info'] = paper_info
 
     return render(request, 'paper_edit.html', context)
 
 
 def submit_paper_edit(request, paper_id):
-    paper_object = MyPapers.objects.filter(id=int(paper_id))[0]
+    if paper_id == 'new':
+        paper_object = MyPapers()
+    else:
+        paper_object = MyPapers.objects.filter(id=int(paper_id))[0]
 
     if request.method == 'POST':
         form = PaperForm(request.POST)
@@ -106,21 +132,22 @@ def submit_paper_edit(request, paper_id):
             paper_object.abstract = form.cleaned_data['abstract']
             paper_object.notes = form.cleaned_data['notes']
             state = form.cleaned_data['state']
+            print state
             if state == 'already known':
-                state = str(0)
+                state = 0
             elif state == 'to be reread':
-                state = str(1)
+                state = 1
             else:
-                state = str(2)
+                state = 2
             paper_object.state = state
 
             paper_object.save()
 
-    return HttpResponseRedirect('/paper_detail/' + paper_id)
-    #return render(request, 'demo_index.html', '')
+    return HttpResponseRedirect('/paper_detail/' + str(paper_object.id))
 
 
-'''
-            return render(request, 'alter_segmentation.html', {'response1_0':response1_0, 'response1_1':response1_1,
-                                                               'response1_2':response1_2, 'response2':response2,
-                                                               'response3':response3, 'response4':response4})'''
+def delete_paper(request, paper_id):
+    paper_object = MyPapers.objects.filter(id=int(paper_id))[0]
+    paper_object.delete()
+
+    return HttpResponseRedirect('/paper_lists')

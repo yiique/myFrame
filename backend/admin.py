@@ -4,7 +4,7 @@ from models import *
 
 # Register your models here.
 class MySideBarAdmin(admin.ModelAdmin):
-    list_display = ('id', 'entry_name', 'entry_content', 'sub_entry_name', 'sub_entry_content')
+    list_display = ('id', 'entry_name')
 
 
 class MyTagsAdmin(admin.ModelAdmin):

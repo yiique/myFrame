@@ -8,9 +8,6 @@ from django.db import models
 class MySideBar(models.Model):
     id = models.AutoField(primary_key=True)
     entry_name = models.CharField(max_length=200)
-    entry_content = models.TextField()              # Papers & Notes id this entry related
-    sub_entry_name = models.TextField()             # json list of sub entry
-    sub_entry_content = models.TextField()          # Papers & Notes these sub entry related
 
 
 class MyTags(models.Model):
@@ -35,7 +32,7 @@ class MyNotes(models.Model):
     id = models.AutoField(primary_key=True)
     time = models.CharField(max_length=100)
     name = models.CharField(max_length=500)
-    type = models.CharField(max_length=400)
+    type = models.IntegerField(default=0)           # 0 book;   1 note
     content = models.TextField()
     state = models.IntegerField(default=2)          # 0 already done; 1 to be modified; 2 to be rewrite
     tag = models.TextField(default=2)

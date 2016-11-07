@@ -11,3 +11,4 @@ class PaperForm(forms.Form):
     abstract = forms.CharField(label='abstract')
     notes = forms.CharField(label='notes')
     state = forms.CharField(label='state')
+    tags = forms.CharField(label='tags')

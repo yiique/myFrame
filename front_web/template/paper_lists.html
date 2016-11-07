@@ -48,7 +48,7 @@
                     <p><code style="background-color: {{ paper.3 }}; color: #000000">{{ paper.4 }}</code></p>
                 </div>
                 <div class="col-xs-8">
-                    {% for tag in paper.8 %}
+                    {% for tag in paper.5 %}
                         <span class="badge bg-light-blue">{{ tag }}</span>
                     {% endfor %}
                 </div>
@@ -59,14 +59,14 @@
                     <strong>Authors</strong>
                 </div>
                 <div class="col-sm-9 invoice-col">
-                    <strong>{{ paper.5 }}</strong>
+                    <strong>{{ paper.6 }}</strong>
                 </div>
 
                 <div class="col-sm-3 invoice-col">
                     <strong>Institutions</strong>
                 </div>
                 <div class="col-sm-9 invoice-col">
-                    <strong>{{ paper.6 }}</strong>
+                    <strong>{{ paper.7 }}</strong>
                 </div>
 
                 <div class="col-sm-12">
@@ -75,7 +75,7 @@
 
                 <div class="col-sm-1"></div>
                 <div class="col-sm-11">
-                    {{ paper.7|djangomarkdown }}
+                    {{ paper.8|djangomarkdown }}
                 </div>
             </div>
 
